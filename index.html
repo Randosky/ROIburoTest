@@ -28,7 +28,7 @@
                 Главная
             </span>
             <span class="history__line">
-
+                —
             </span>
             <span class="history__contacts">
                 Контакты
@@ -36,93 +36,110 @@
         </aside>
 
         <section class="contacts main__section" id="contacts">
-            <h1 class="main__title contacts__title">
+            <h1 class="contacts__title">
                 Контакты
             </h1>
-            <div id="map" class="contacts__map" style="width: 600px; height: 400px">
-            </div>
-            <div class="contacts__content">
-                <h3 class="contacts__content-title">
-                    Контакты
-                </h3>
-                <div class="contacts__content-block">
-                    <div class="contacts__content-phones">
-                        <ul class="contacts__content-list">
-                            <li class="contacts__content-item-title">
-                                <a href="tel:+79000000000">
-                                    8-900-000-00-00
-                                </a>
-                            </li>
-                            <li class="contacts__content-item">Москва</li>
-                        </ul>
-                        <ul class="contacts__content-list">
-                            <li class="contacts__content-item-title">
-                                <a href="tel:+79000000000">
-                                    8-900-000-00-00
-                                </a>
-                            </li>
-                            <li class="contacts__content-item">Россия</li>
-                        </ul>
-                        <div class="main__copy"></div>
+            <div id="map" class="contacts__map">
+                <div id="mapMarker" class="map__marker">
+                    <img src="./Images/yandex_marker.svg" alt="marker_image">
+                </div>
+                <div class="contacts__content">
+                    <h3 class="contacts__content-title">
+                        Контакты
+                    </h3>
+                    <div class="contacts__content-block">
+                        <div class="contacts__content-phones">
+                            <div class="contacts__content-phones-lists">
+                                <ul class="contacts__content-list contacts__content-phones-list">
+                                    <li class="contacts__content-item-title">
+                                        <a href="tel:+79000000000">
+                                            8-900-000-00-00
+                                        </a>
+                                    </li>
+                                    <li class="contacts__content-item">Москва</li>
+                                </ul>
+                                <ul class="contacts__content-list">
+                                    <li class="contacts__content-item-title">
+                                        <a href="tel:+79000000000">
+                                            8-900-000-00-00
+                                        </a>
+                                    </li>
+                                    <li class="contacts__content-item">Россия</li>
+                                </ul>
+                            </div>
+                            <div class="main__copy"></div>
+                        </div>
+                        <div class="contacts__content-mail">
+                            <ul class="contacts__content-list">
+                                <li class="contacts__content-item-title">
+                                    <a href="mailto:metall-market@mail.ru">
+                                        metall-market@mail.ru
+                                    </a>
+                                </li>
+                                <li class="contacts__content-item">
+                                    Ежедневно 9:00&nbsp;—&nbsp;18:00
+                                </li>
+                            </ul>
+                            <div class="main__copy"></div>
+                        </div>
+                        <div class="contacts__content-address">
+                            <ul class="contacts__content-list">
+                                <li class="contacts__content-item-title">
+                                    Адрес
+                                </li>
+                                <li class="contacts__content-item">
+                                    123456, г. Москва, ул. Ленина&nbsp;3А, помещ. 2-7
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts__content-time">
+                            <ul class="contacts__content-list">
+                                <li class="contacts__content-item-title">
+                                    Время работы
+                                </li>
+                                <li class="contacts__content-item">
+                                    Ежедневно 9:00&nbsp;—&nbsp;18:00
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="contacts__content-mail">
-                        <ul class="contacts__content-list">
-                            <li class="contacts__content-item-title">
-                                <a href="mailto:metall-market@mail.ru">
-                                    metall-market@mail.ru
-                                </a>
-                            </li>
-                            <li class="contacts__content-item">
-                                Ежедневно 9:00&nbsp;—&nbsp;18:00
-                            </li>
-                        </ul>
-                        <div class="main__copy"></div>
-                    </div>
-                    <div class="contacts__content-address">
-                        <ul class="contacts__content-list">
-                            <li class="contacts__content-item-title">
-                                Адрес
-                            </li>
-                            <li class="contacts__content-item">
-                                123456, г. Москва, ул. Ленина&nbsp;3А, помещ. 2-7
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contacts__content-time">
-                        <ul class="contacts__content-list">
-                            <li class="contacts__content-item-title">
-                                Время работы
-                            </li>
-                            <li class="contacts__content-item">
-                                Ежедневно 9:00&nbsp;—&nbsp;18:00
-                            </li>
-                        </ul>
+                    <div class="contacts__content-buttons">
+                        <button class="buttons__map">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.75 17V3" stroke="#00A55A" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M6.75 11L12.75 17L18.75 11" stroke="#00A55A" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.75 21H5.75" stroke="#00A55A" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <span>Карта проезда</span>
+                        </button>
+                        <button class="buttons__call">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.2494 16.4765V19.1862C21.2505 19.4377 21.1988 19.6867 21.0979 19.9172C20.9969 20.1477 20.8488 20.3546 20.663 20.5247C20.4773 20.6947 20.258 20.8242 20.0193 20.9048C19.7805 20.9854 19.5275 21.0153 19.2765 20.9927C16.4915 20.6907 13.8164 19.7409 11.466 18.2197C9.27929 16.8329 7.42534 14.9827 6.0358 12.8003C4.50627 10.4439 3.55442 7.76107 3.25735 4.96915C3.23473 4.71938 3.26447 4.46764 3.34468 4.22996C3.42489 3.99229 3.55381 3.77389 3.72323 3.58866C3.89265 3.40343 4.09885 3.25544 4.32872 3.15411C4.55858 3.05278 4.80707 3.00032 5.05837 3.00009H7.77347C8.21269 2.99577 8.6385 3.151 8.97152 3.43683C9.30455 3.72267 9.52207 4.11961 9.58354 4.55366C9.69814 5.42084 9.91067 6.27229 10.2171 7.09177C10.3388 7.41507 10.3652 7.76642 10.293 8.1042C10.2208 8.44198 10.0531 8.75203 9.8098 8.99761L8.66041 10.1447C9.94877 12.406 11.8248 14.2784 14.0906 15.5642L15.24 14.4171C15.4861 14.1742 15.7967 14.0069 16.1352 13.9348C16.4736 13.8628 16.8257 13.8891 17.1496 14.0106C17.9707 14.3164 18.8239 14.5285 19.6928 14.6429C20.1324 14.7048 20.5339 14.9258 20.8209 15.2639C21.108 15.6019 21.2605 16.0335 21.2494 16.4765Z"
+                                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Заказать звонок</span>
+                        </button>
                     </div>
                 </div>
-                <div class="contacts__content-buttons">
-                    <button class="buttons__map">
-                        <span>Карта проезда</span>
-                    </button>
-                    <button class="buttons__call">
-                        <span>
-                            Заказать звонок
-                        </span>
-                    </button>
+                <div class="contacts__info">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                              stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16V12" stroke="#818181" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M12 8H12.01" stroke="#818181" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    <p class="contacts__info-text">
+                        Вход в&nbsp;офис находится на&nbsp;углу здания со&nbsp;стороны Ленинградского проспекта на&nbsp;пересечении
+                        с&nbsp;ул. Балтийская.
+                    </p>
                 </div>
-            </div>
-            <div class="contacts__info">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                          stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 16V12" stroke="#818181" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                    <path d="M12 8H12.01" stroke="#818181" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-                <p class="contacts__info-text">
-                    Вход в&nbsp;офис находится на&nbsp;углу здания со&nbsp;стороны Ленинградского проспекта на&nbsp;пересечении
-                    с&nbsp;ул. Балтийская.
-                </p>
             </div>
         </section>
 

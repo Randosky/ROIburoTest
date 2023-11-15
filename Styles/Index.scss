@@ -1,20 +1,227 @@
-@import "./Variables.css";
+@import "./Variables.scss";
 
-.main{
+.main {
   width: 100vw;
   height: 100vh;
   max-height: fit-content;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.container{
+.container {
   height: 100%;
   max-width: calc(1920px + 92px + 92px);
   padding: 56px 92px 0 92px;
   margin: 0 auto;
 }
 
+.main__title {
+  @extend %fontH2;
+  margin-bottom: 32px;
+}
+
+.main__section {
+  width: 100%;
+  margin-bottom: 124px;
+}
+
+.main__copy {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid $gray300;
+  background: white url("../Images/copyGray.svg") no-repeat center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover, &:active {
+    border: 1px solid $primary500;
+    background: url("../Images/copyGreen.svg") no-repeat center;
+  }
+}
+
+
+// HISTORY
+
+
+.history {
+  width: 100%;
+  @extend %flexCenter;
+  justify-content: start;
+  margin-bottom: 24px;
+  user-select: none;
+}
+
+.history__main {
+  cursor: pointer;
+  @extend %fontClassicTextButton;
+  color: $black60;
+}
+
+.history__line {
+  @extend %fontClassicTextButton;
+  color: $black60;
+  margin: 0 16px;
+}
+
+.history__contacts {
+  cursor: pointer;
+  @extend %fontClassicTextButton;
+  color: $gray500;
+}
+
+
 // CONTACTS
 
+
+.contacts {
+}
+
+.contacts__title {
+  @extend %fontH1;
+  margin-bottom: 56px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 728px;
+  position: relative;
+
+  canvas {
+    filter: grayscale(1);
+  }
+}
+
+.contacts__content {
+  @extend %flexCenterColumn;
+  align-items: start;
+  justify-content: start;
+  position: absolute;
+  width: 554px;
+  height: 616px;
+  background-color: $gray0;
+  padding: 56px;
+  top: 56px;
+  left: 56px;
+  z-index: 1000000;
+}
+
+.contacts__content-title {
+  @extend %fontH3;
+  margin-bottom: 32px;
+}
+
+.contacts__content-block {
+  width: 100%;
+  height: fit-content;
+}
+
+.contacts__content-list {
+  width: fit-content;
+  height: fit-content;
+}
+
+.contacts__content-item-title {
+  margin-bottom: 8px;
+  color: $gray500;
+  @extend %fontSubH2;
+}
+
+.contacts__content-item {
+  color: $gray400;
+  @extend %fontClassicText;
+}
+
+.contacts__content-phones {
+  @extend %flexJustify;
+  margin-bottom: 24px;
+}
+
+.contacts__content-phones-lists{
+  @extend %flexCenter;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+}
+
+.contacts__content-phones-list {
+  margin-right: 32px;
+}
+
+.contacts__content-mail{
+  @extend %flexJustify;
+  margin-bottom: 24px;
+}
+
+.contacts__content-address{
+  margin-bottom: 24px;
+}
+
+.contacts__content-buttons{
+  @extend %flexJustify;
+  width: 100%;
+  height: 56px;
+  flex-grow: 1;
+}
+
+.buttons__map{
+  width: 48%;
+  @extend %buttonPadding;
+  @extend %fontClassicTextButton;
+  color: $primary500;
+  background-color: $primary100;
+  align-self: end;
+  @extend %flexCenter;
+  padding: 16px 0;
+
+  svg{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+}
+
+.buttons__call{
+  width: 48%;
+  @extend %buttonPadding;
+  @extend %fontClassicTextButton;
+  color: $gray0;
+  background-color: $primary500;
+  align-self: end;
+  @extend %flexCenter;
+  padding: 16px 0;
+
+  svg{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+}
+
+.contacts__info {
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  width: 30%;
+  max-width: 644px;
+  padding: $normalPadding;
+  z-index: 1000000000;
+  background: $gray0;
+  @extend %flexCenter;
+  align-items: start;
+
+  svg{
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.contacts__info-text{
+  word-break: break-word;
+  @extend %fontSmallText;
+  color: $gray400;
+}
 
 // OFFICE
 

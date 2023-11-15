@@ -1,5 +1,5 @@
 $black60: rgba(40, 40, 40, 0.60);
-$gray0: #818181;
+$gray0: #ffffff;
 $gray100: #FAFAFA;
 $gray200: #F2F2F2;
 $gray300: #D9D9D9;
@@ -10,44 +10,84 @@ $primary500: #00A55A;
 $red: #E54545;
 $secondary500: #272A68;
 
-%fontH1{
+%fontH1 {
   font-size: 56px;
   font-weight: 600;
   line-height: 68px;
 }
 
-%fontH2{
+%fontH2 {
   font-size: 48px;
   font-weight: 600;
   line-height: 58px;
 }
 
-%fontH3{
+%fontH3 {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
 }
 
-%fontSubH2{
+%fontSubH2 {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
 }
 
-%fontClassicText{
+%fontClassicText {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-%fontLargeText{
+%fontClassicTextButton {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+%fontLargeText {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
 }
 
-%fontSmallText{
+%fontSmallText {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
+
+%flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexJustify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flexJustifyColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// OTHER
+
+%buttonPadding{
+  padding: 16px 32px;
+}
+
+$normalPadding: 32px;
