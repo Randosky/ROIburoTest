@@ -1,0 +1,69 @@
+@import "./Variables.css";
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  max-height: fit-content;
+}
+
+.container{
+  height: 100%;
+  max-width: calc(1920px + 92px + 92px);
+  padding: 56px 92px 0 92px;
+  margin: 0 auto;
+}
+
+// CONTACTS
+
+
+// OFFICE
+
+
+.swiper-container {
+  width: 600px;
+  height: 200px;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.swiper-progress-bar {
+  width: 600px;
+  height: 4px;
+  position: relative;
+  margin: 20px auto;
+  background: #eeeeee;
+
+  .progress {
+    height: inherit;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #007aff;
+    z-index: 1;
+  }
+
+  .progress-sections {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+
+    span {
+      flex: 1;
+      height: inherit;
+      border-right: 2px solid #eee;
+
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+  }
+}

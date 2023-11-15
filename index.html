@@ -3,8 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <title>ROIburoTest</title>
+    <link href="./Styles/Reset.css" rel="stylesheet">
+    <link href="./Styles/Variables.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./Styles/Index.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="Scripts/swiper.js"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=de2f076b-2378-4185-9233-ded6ef7add23&lang=ru_RU"></script>
+    <script src="Scripts/yandexMap.js"></script>
 </head>
 <body>
+
+<header>
+</header>
+
+<main class="main">
+    <article class="container">
+
+        <aside class="history">
+            <span class="history__main">
+                Главная
+            </span>
+            <span class="history__line">
+
+            </span>
+            <span class="history__contacts">
+                Контакты
+            </span>
+        </aside>
+
+        <section class="contacts main__section" id="contacts">
+            <h1 class="main__title contacts__title">
+                Контакты
+            </h1>
+            <div id="map" class="contacts__map" style="width: 600px; height: 400px">
+            </div>
+            <div class="contacts__content">
+                <h3 class="contacts__content-title">
+                    Контакты
+                </h3>
+                <div class="contacts__content-block">
+                    <div class="contacts__content-phones">
+                        <ul class="contacts__content-list">
+                            <li class="contacts__content-item-title">
+                                <a href="tel:+79000000000">
+                                    8-900-000-00-00
+                                </a>
+                            </li>
+                            <li class="contacts__content-item">Москва</li>
+                        </ul>
+                        <ul class="contacts__content-list">
+                            <li class="contacts__content-item-title">
+                                <a href="tel:+79000000000">
+                                    8-900-000-00-00
+                                </a>
+                            </li>
+                            <li class="contacts__content-item">Россия</li>
+                        </ul>
+                        <div class="main__copy"></div>
+                    </div>
+                    <div class="contacts__content-mail">
+                        <ul class="contacts__content-list">
+                            <li class="contacts__content-item-title">
+                                <a href="mailto:metall-market@mail.ru">
+                                    metall-market@mail.ru
+                                </a>
+                            </li>
+                            <li class="contacts__content-item">
+                                Ежедневно 9:00&nbsp;—&nbsp;18:00
+                            </li>
+                        </ul>
+                        <div class="main__copy"></div>
+                    </div>
+                    <div class="contacts__content-address">
+                        <ul class="contacts__content-list">
+                            <li class="contacts__content-item-title">
+                                Адрес
+                            </li>
+                            <li class="contacts__content-item">
+                                123456, г. Москва, ул. Ленина&nbsp;3А, помещ. 2-7
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__content-time">
+                        <ul class="contacts__content-list">
+                            <li class="contacts__content-item-title">
+                                Время работы
+                            </li>
+                            <li class="contacts__content-item">
+                                Ежедневно 9:00&nbsp;—&nbsp;18:00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts__content-buttons">
+                    <button class="buttons__map">
+                        <span>Карта проезда</span>
+                    </button>
+                    <button class="buttons__call">
+                        <span>
+                            Заказать звонок
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="contacts__info">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                          stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16V12" stroke="#818181" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M12 8H12.01" stroke="#818181" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                <p class="contacts__info-text">
+                    Вход в&nbsp;офис находится на&nbsp;углу здания со&nbsp;стороны Ленинградского проспекта на&nbsp;пересечении
+                    с&nbsp;ул. Балтийская.
+                </p>
+            </div>
+        </section>
+
+        <section class="office main__section" id="office">
+            <div class="office__swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="swiper-progress-bar">
+                <div class="progress"></div>
+                <div class="progress-sections"></div>
+            </div>
+        </section>
+
+        <section class="team main__section" id="team">
+            <h2 class="main__title team__title">
+                Наша команда
+            </h2>
+            <p class="team__description">
+                Металл-Маркет&nbsp;&mdash; это команда профессионалов, влюбленных в&nbsp;свое дело. Уверены, что
+                развитие компании начинается с&nbsp;развития ее&nbsp;сотрудников.
+            </p>
+            <div class="team__swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="person__image">
+                                <img src="./Images/team_1.png" alt="teamPersonImage">
+                            </div>
+                            <div class="person__info">
+                                <p class="person__name">
+                                    Ворончихин Сергей Вячеславович
+                                </p>
+                                <p class="person__jobTitle">
+                                    Директор
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="person__image">
+                                <img src="./Images/team_2.png" alt="teamPersonImage">
+                            </div>
+                            <div class="person__info">
+                                <p class="person__name">
+                                    Ситникова Александра Константиновна
+                                </p>
+                                <p class="person__jobTitle">
+                                    Офис-менеджер
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="person__image">
+                                <img src="./Images/team_3.png" alt="teamPersonImage">
+                            </div>
+                            <div class="person__info">
+                                <p class="person__name">
+                                    Лазарева Валерия Максимовна
+                                </p>
+                                <p class="person__jobTitle">
+                                    Бухгалтер
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="person__image">
+                                <img src="./Images/team_4.png" alt="teamPersonImage">
+                            </div>
+                            <div class="person__info">
+                                <p class="person__name">
+                                    Наумов Илья Семёнович
+                                </p>
+                                <p class="person__jobTitle">
+                                    Руководитель отдела продаж
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="requisites main__section" id="requisites">
+            <div class="requisites__head">
+                <div class="requisites__head-left">
+                    <h2 class="main__title requisites__title">
+                        Реквизиты
+                    </h2>
+                    <p class="requisites__description">
+                        Металл-Маркет&nbsp;&mdash; компания, которая dolor sit amet consectetur. Ac&nbsp;sem nisi nullam
+                        mi&nbsp;odio.
+                        Justo eu&nbsp;egestas arcu rhoncus&nbsp;et. Eleifend morbi sit proin sed proin. Mattis purus sit
+                        malesuada in&nbsp;praesent ac&nbsp;nisi convallis. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <a class="requisites__head-right" download>
+                    <div class="head__right-download">
+                    </div>
+                    <ul class="head__right-list">
+                        <li class="head__right-item-title">
+                            Скачать реквизиты
+                        </li>
+                        <li class="head__right-item">
+                            Скачать pdf файл
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <table class="requisites__table">
+                <thead class="table__head">
+                </thead>
+                <tbody class="table__body">
+                <tr class="table__tr">
+                    <td class="table__td">Полное наименование</td>
+                    <td class="table__td">Металл-Маркет</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">Юридический адрес</td>
+                    <td class="table__td">123456, Россия, Москва, ул. Ленина, 145а, 801</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">ИНН</td>
+                    <td class="table__td">1234567890</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">КПП</td>
+                    <td class="table__td">123456789</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">ОГРН</td>
+                    <td class="table__td">1234567890987</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">Расчетный счет</td>
+                    <td class="table__td">12345678909876543210</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">Корреспондентский счет</td>
+                    <td class="table__td">12345678909876543210</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">БИК</td>
+                    <td class="table__td">123456789</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">Банк</td>
+                    <td class="table__td">ПАО &laquo;Сбербанк&raquo;</td>
+                </tr>
+                <tr class="table__tr">
+                    <td class="table__td">Директор</td>
+                    <td class="table__td">Лебедев Кирилл Александрович</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </article>
+</main>
+
+<footer>
+</footer>
 
 </body>
 </html>
