@@ -8,10 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" rel="stylesheet">
     <link href="./Styles/Index.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="Scripts/swiper.js"></script>
     <script src="https://api-maps.yandex.ru/v3/?apikey=de2f076b-2378-4185-9233-ded6ef7add23&lang=ru_RU"></script>
     <script src="Scripts/yandexMap.js"></script>
 </head>
@@ -144,98 +140,125 @@
         </section>
 
         <section class="office main__section" id="office">
-            <div class="office__swiper swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
+            <div class="office__swiper">
+                <div class="swiper__img">
+                    <img src="./Images/office_1.png" alt="officeImg">
                 </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper__img">
+                    <img src="./Images/office_2.png" alt="officeImg">
+                </div>
+                <div class="swiper__img">
+                    <img src="./Images/office_3.png" alt="officeImg">
+                </div>
             </div>
-
-            <div class="swiper-progress-bar">
-                <div class="progress"></div>
-                <div class="progress-sections"></div>
+            <div class="office__control">
+                <div class="control__progress"></div>
+                <div class="control__btns">
+                    <button class="control__btns-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 20L8 12L16 4" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="control__btns-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 20L16 12L8 4" stroke="#00A55A" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
         <section class="team main__section" id="team">
-            <h2 class="main__title team__title">
-                Наша команда
-            </h2>
+            <div class="team__head">
+                <h2 class="main__title team__title">
+                    Наша команда
+                </h2>
+                <div class="control__btns">
+                    <button class="control__btns-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 20L8 12L16 4" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="control__btns-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 20L16 12L8 4" stroke="#00A55A" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
             <p class="team__description">
                 Металл-Маркет&nbsp;&mdash; это команда профессионалов, влюбленных в&nbsp;свое дело. Уверены, что
                 развитие компании начинается с&nbsp;развития ее&nbsp;сотрудников.
             </p>
-            <div class="team__swiper swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="team__person">
-                            <div class="person__image">
-                                <img src="./Images/team_1.png" alt="teamPersonImage">
-                            </div>
-                            <div class="person__info">
-                                <p class="person__name">
-                                    Ворончихин Сергей Вячеславович
-                                </p>
-                                <p class="person__jobTitle">
-                                    Директор
-                                </p>
-                            </div>
-                        </div>
+            <div class="team__swiper">
+                <div class="team__person">
+                    <div class="person__image">
+                        <img src="./Images/team_1.png" alt="teamPersonImage">
                     </div>
-                    <div class="swiper-slide">
-                        <div class="team__person">
-                            <div class="person__image">
-                                <img src="./Images/team_2.png" alt="teamPersonImage">
-                            </div>
-                            <div class="person__info">
-                                <p class="person__name">
-                                    Ситникова Александра Константиновна
-                                </p>
-                                <p class="person__jobTitle">
-                                    Офис-менеджер
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team__person">
-                            <div class="person__image">
-                                <img src="./Images/team_3.png" alt="teamPersonImage">
-                            </div>
-                            <div class="person__info">
-                                <p class="person__name">
-                                    Лазарева Валерия Максимовна
-                                </p>
-                                <p class="person__jobTitle">
-                                    Бухгалтер
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team__person">
-                            <div class="person__image">
-                                <img src="./Images/team_4.png" alt="teamPersonImage">
-                            </div>
-                            <div class="person__info">
-                                <p class="person__name">
-                                    Наумов Илья Семёнович
-                                </p>
-                                <p class="person__jobTitle">
-                                    Руководитель отдела продаж
-                                </p>
-                            </div>
-                        </div>
+                    <div class="person__info">
+                        <p class="person__surname">
+                            Ворончихин
+                        </p>
+                        <p class="person__name">
+                            Сергей Вячеславович
+                        </p>
+                        <p class="person__jobTitle">
+                            Директор
+                        </p>
                     </div>
                 </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="team__person">
+                    <div class="person__image">
+                        <img src="./Images/team_2.png" alt="teamPersonImage">
+                    </div>
+                    <div class="person__info">
+                        <p class="person__surname">
+                            Ситникова
+                        </p>
+                        <p class="person__name">
+                            Александра Константиновна
+                        </p>
+                        <p class="person__jobTitle">
+                            Офис-менеджер
+                        </p>
+                    </div>
+                </div>
+                <div class="team__person">
+                    <div class="person__image">
+                        <img src="./Images/team_3.png" alt="teamPersonImage">
+                    </div>
+                    <div class="person__info">
+                        <p class="person__surname">
+                            Лазарева
+                        </p>
+                        <p class="person__name">
+                            Валерия Максимовна
+                        </p>
+                        <p class="person__jobTitle">
+                            Бухгалтер
+                        </p>
+                    </div>
+                </div>
+                <div class="team__person">
+                    <div class="person__image">
+                        <img src="./Images/team_4.png" alt="teamPersonImage">
+                    </div>
+                    <div class="person__info">
+                        <p class="person__surname">
+                            Наумов
+                        </p>
+                        <p class="person__name">
+                            Илья Семёнович
+                        </p>
+                        <p class="person__jobTitle">
+                            Руководитель отдела продаж
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -269,13 +292,23 @@
                 <thead class="table__head">
                 </thead>
                 <tbody class="table__body">
-                <tr class="table__tr">
+                <tr class="table__tr table__address">
                     <td class="table__td">Полное наименование</td>
                     <td class="table__td">Металл-Маркет</td>
                 </tr>
                 <tr class="table__tr">
                     <td class="table__td">Юридический адрес</td>
-                    <td class="table__td">123456, Россия, Москва, ул. Ленина, 145а, 801</td>
+                    <td class="table__td table__copy">
+                        <span>
+                            123456, Россия, Москва, ул. Ленина, 145а, 801
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.1429 8H9.85714C8.83147 8 8 8.83147 8 9.85714V19.1429C8 20.1685 8.83147 21 9.85714 21H19.1429C20.1685 21 21 20.1685 21 19.1429V9.85714C21 8.83147 20.1685 8 19.1429 8Z"
+                                  stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.85714 16C3.83571 16 3 15.1643 3 14.1429V4.85714C3 3.83571 3.83571 3 4.85714 3H14.1429C15.1643 3 16 3.83571 16 4.85714"
+                                  stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </td>
                 </tr>
                 <tr class="table__tr">
                     <td class="table__td">ИНН</td>
