@@ -1,0 +1,455 @@
+.contacts__title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 68px;
+}
+
+.main__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.contacts__content-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.head__right-item-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.table__td:first-child, .person__surname, .person__name, .contacts__content-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.table__td:last-child, .head__right-item, .contacts__content-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.buttons__call, .buttons__map, .history__contacts, .history__line, .history__main {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.requisites__description, .team__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.person__jobTitle, .contacts__info-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.requisites__head-right, .person__image, .team__swiper, .control__btns, .office__control, .office__swiper, .contacts__info, .buttons__call, .buttons__map, .contacts__content-phones-lists, .history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__copy, .requisites__head, .team__head, .contacts__content-buttons, .contacts__content-mail, .contacts__content-phones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons__call, .buttons__map {
+  padding: 16px 32px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  max-height: fit-content;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 2104px;
+  padding: 56px 92px 0 92px;
+  margin: 0 auto;
+}
+
+.main__title {
+  margin-bottom: 32px;
+}
+
+.main__section {
+  width: 100%;
+  margin-bottom: 124px;
+}
+
+.main__copy {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid #D9D9D9;
+  background: white url("../Images/copyGray.svg") no-repeat center;
+  transition: all 0.2s ease-in-out;
+}
+.main__copy:hover, .main__copy:active {
+  border: 1px solid #00A55A;
+  background: url("../Images/copyGreen.svg") no-repeat center;
+}
+
+.history {
+  width: 100%;
+  justify-content: start;
+  margin-bottom: 24px;
+  user-select: none;
+}
+
+.history__main {
+  cursor: pointer;
+  color: rgba(40, 40, 40, 0.6);
+}
+
+.history__line {
+  color: rgba(40, 40, 40, 0.6);
+  margin: 0 16px;
+}
+
+.history__contacts {
+  cursor: pointer;
+  color: #282828;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.contacts__title {
+  margin-bottom: 56px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 728px;
+  position: relative;
+}
+.contacts__map canvas {
+  filter: grayscale(1);
+}
+
+.contacts__content {
+  align-items: start;
+  justify-content: start;
+  position: absolute;
+  width: 554px;
+  height: 616px;
+  background-color: #ffffff;
+  padding: 56px;
+  top: 56px;
+  left: 56px;
+  z-index: 1000000;
+}
+
+.contacts__content-media {
+  display: none;
+}
+
+.contacts__content-title {
+  margin-bottom: 32px;
+}
+
+.contacts__content-block {
+  width: 100%;
+  height: fit-content;
+}
+
+.contacts__content-list {
+  width: fit-content;
+  height: fit-content;
+}
+
+.contacts__content-item-title {
+  margin-bottom: 8px;
+  color: #282828;
+}
+
+.contacts__content-item {
+  color: #818181;
+}
+
+.contacts__content-phones {
+  margin-bottom: 24px;
+}
+
+.contacts__content-phones-lists {
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+}
+
+.contacts__content-phones-list {
+  margin-right: 32px;
+}
+
+.contacts__content-mail {
+  margin-bottom: 24px;
+}
+
+.contacts__content-address {
+  margin-bottom: 24px;
+}
+
+.contacts__content-buttons {
+  width: 100%;
+  height: 56px;
+  flex-grow: 1;
+}
+
+.buttons__map {
+  width: 48%;
+  color: #00A55A;
+  background-color: #E5F6EE;
+  align-self: end;
+  padding: 16px 0;
+}
+.buttons__map svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.buttons__call {
+  width: 48%;
+  color: #ffffff;
+  background-color: #00A55A;
+  align-self: end;
+  padding: 16px 0;
+}
+.buttons__call svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.contacts__info {
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  width: 30%;
+  max-width: 644px;
+  padding: 32px;
+  z-index: 1000000000;
+  background: #ffffff;
+  align-items: start;
+}
+.contacts__info svg {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.contacts__info-media {
+  display: none;
+}
+
+.contacts__info-text {
+  word-break: break-word;
+  color: #818181;
+}
+
+.office {
+  width: 100%;
+}
+
+.office__swiper {
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.swiper__img {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+.swiper__img:last-child {
+  margin-right: 0;
+}
+.swiper__img:first-child {
+  margin-left: 0;
+}
+.swiper__img img {
+  width: 100%;
+}
+
+.office__control {
+  justify-content: start;
+}
+
+.control__progress {
+  flex-grow: 1;
+  height: 8px;
+  background: #F2F2F2;
+  position: relative;
+  margin-right: 64px;
+}
+.control__progress::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  left: 0;
+  top: 0;
+  background-color: #00A55A;
+  z-index: 10000;
+}
+
+.control__btns {
+  justify-content: start;
+  width: fit-content;
+}
+.control__btns button {
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  background-color: transparent;
+}
+
+.control__btns-prev {
+  margin-right: 16px;
+}
+
+.control__btns-next {
+  border: 1px solid #00A55A;
+}
+
+.team {
+  width: 100%;
+}
+
+.team__head {
+  align-items: start;
+  margin-bottom: 32px;
+}
+
+.team__title {
+  margin-bottom: 0;
+}
+
+.team__description {
+  width: 780px;
+  word-break: break-word;
+  margin-bottom: 41px;
+}
+
+.team__swiper {
+  justify-content: start;
+}
+
+.team__person {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+.team__person:first-child {
+  margin-left: 0;
+}
+.team__person:last-child {
+  margin-right: 0;
+}
+
+.person__image {
+  align-items: end;
+  padding: 40px 40px 0;
+  background-color: #FAFAFA;
+}
+
+.person__info {
+  padding: 24px 32px;
+  border: 1px solid #D9D9D9;
+  border-top: none;
+}
+
+.person__name {
+  margin-bottom: 8px;
+}
+
+.team__progress {
+  display: none;
+}
+
+.requisites__head {
+  width: 100%;
+  align-items: start;
+  margin-bottom: 56px;
+}
+
+.requisites__head-left {
+  width: 67%;
+}
+
+.requisites__description {
+  color: #818181;
+}
+
+.requisites__head-right {
+  width: 27%;
+  padding: 24px 32px 24px 24px;
+  background-color: #FAFAFA;
+  justify-content: start;
+}
+
+.head__right-download {
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  background: #E5F6EE url("../Images/downloadIcon.svg") no-repeat center;
+  margin-right: 24px;
+}
+
+.head__right-item-title {
+  color: #282828;
+  margin-bottom: 8px;
+}
+
+.head__right-item {
+  color: #818181;
+}
+
+.requisites__media-download {
+  display: none;
+}
+
+.requisites__table {
+  width: 67%;
+  border-spacing: 0;
+}
+
+.table__address {
+  background-color: #FAFAFA;
+}
+
+.table__td {
+  padding: 16px 32px;
+  border: 1px solid #D9D9D9;
+}
+.table__td:first-child {
+  color: #282828;
+}
+.table__td:last-child {
+  color: #282828;
+}
+
+/*# sourceMappingURL=Index.css.map */
