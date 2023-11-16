@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import "./Variables";
 
 * {
   box-sizing: border-box;
@@ -12,21 +13,21 @@ body {
   margin: 0;
 }
 
-/**::-webkit-scrollbar {*/
-/*    width: 7px;*/
-/*    height: 5px;*/
-/*}*/
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
 
-/**::-webkit-scrollbar-track {*/
-/*    background: #e0e0e0;*/
-/*    border-radius: 20px;*/
-/*}*/
+*::-webkit-scrollbar-track {
+  background: $gray100;
+  border-radius: 20px;
+}
 
-/**::-webkit-scrollbar-thumb {*/
-/*    cursor: pointer;*/
-/*    background: #361107;*/
-/*    border-radius: 20px;*/
-/*}*/
+*::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: $primary500;
+  border-radius: 20px;
+}
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -48,7 +49,7 @@ a {
   color: inherit;
   font-size: inherit;
 
-  &:hover, &:focus, &:active{
+  &:hover, &:focus, &:active {
     text-decoration: none;
   }
 }
@@ -86,12 +87,12 @@ input, textarea, select {
   padding: 0;
 }
 
-input::placeholder, textarea::placeholder, select::placeholder{
+input::placeholder, textarea::placeholder, select::placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder{
+input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
   color: inherit;
   opacity: 0.5;
 }
