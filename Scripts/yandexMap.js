@@ -7,7 +7,7 @@ async function initMap() {
         document.getElementById('map'),
         {
             location: {
-                center: [36.61986834792114,55.89836380661811],
+                center: [37.620894937726725,55.75661494827485],
                 zoom: 7
             }
         }
@@ -18,7 +18,7 @@ async function initMap() {
 
     const marker = new YMapMarker(
         {
-            coordinates: [37.41986834792114,56.29836380661811],
+            coordinates: [37.620894937726725,55.75661494827485],
         },
         markerElement
     );
