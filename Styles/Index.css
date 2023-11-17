@@ -461,4 +461,8 @@
   color: #282828;
 }
 
+.swiper-slide {
+  user-select: none;
+}
+
 /*# sourceMappingURL=Index.css.map */

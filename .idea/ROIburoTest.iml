@@ -12,5 +12,6 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="Swiper" level="application" />
     <orderEntry type="library" name="jquery-easing" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
