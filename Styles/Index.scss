@@ -51,22 +51,26 @@
   user-select: none;
 }
 
-.history__main {
-  cursor: pointer;
-  @extend %fontClassicTextButton;
-  color: $black60;
-}
-
-.history__line {
-  @extend %fontClassicTextButton;
-  color: $black60;
-  margin: 0 16px;
-}
-
-.history__contacts {
+.history__nav {
   cursor: pointer;
   @extend %fontClassicTextButton;
   color: $gray500;
+}
+
+.history__nav-before {
+  color: $black60;
+  margin-right: 48px;
+  position: relative;
+
+  &::before{
+    content: "—";
+    position: absolute;
+    width: 16px;
+    height: 100%;
+    top: 50%;
+    right: -32px;
+    transform: translate(0, -50%);
+  }
 }
 
 
@@ -354,7 +358,13 @@
   @extend %flexCenter;
   align-items: end;
   padding: 40px 40px 0;
+  //width: 100%;
   background-color: $gray100;
+
+  img{
+    //width: 100%;
+    //object-fit: contain;
+  }
 }
 
 .person__info {
@@ -453,10 +463,11 @@
 }
 
 .table__tr {
-}
+  transition: all 0.2s ease-in-out;
 
-.table__address {
-  background-color: $gray100;
+  &:hover, &:active{
+    background-color: $gray100;
+  }
 }
 
 .table__copy{
@@ -468,6 +479,7 @@
   border: 1px solid $gray300;
 
   &:first-child {
+    border-right: none;
     @extend %fontSubH2;
     color: $gray500;
   }
