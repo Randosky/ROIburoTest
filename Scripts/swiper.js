@@ -56,6 +56,7 @@ const teamSwiper = new Swiper(".team__swiper", {
             slidesPerView: 2,
             spaceBetween: 24,
             slidesPerColumn: 2,
+            slidesPerGroup: 2,
             grid: {
                 rows: 2,
                 fill: "row"
