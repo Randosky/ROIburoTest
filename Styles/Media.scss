@@ -21,6 +21,10 @@
     right: 40px;
   }
 
+  .person__image{
+    padding: 32px 32px 0;
+  }
+
   .requisites__table {
     width: 100%;
   }
@@ -76,42 +80,20 @@
     margin-bottom: 32px;
   }
 
-  .office__swiper {
-    width: fit-content;
-  }
-
-  .swiper__img {
-    img {
-      width: fit-content;
-    }
-  }
-
   .team__progress {
     display: flex;
   }
 
   .team__swiper {
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 16px;
-    width: 100%;
   }
 
-  .team__person {
-    flex-grow: 0;
-    width: calc(50% - 12px);
-    margin: 0 0 24px;
+  .person__image{
+    padding: 24px 24px 0;
   }
 
   .team__description {
     width: 100%;
-  }
-
-  .person__image {
-    img {
-      width: 259px;
-      height: 308px;
-    }
   }
 
   .control__progress {
@@ -313,12 +295,6 @@
     margin-bottom: 24px;
   }
 
-  .swiper__img{
-    img{
-      max-width: 341px;
-    }
-  }
-
   .main__title{
     margin-bottom: 20px;
     font-size: 32px;
@@ -342,8 +318,6 @@
   }
 
   .team__swiper{
-    flex-wrap: nowrap;
-    justify-content: start;
     margin-bottom: 0;
   }
 

@@ -62,7 +62,7 @@
   margin-right: 48px;
   position: relative;
 
-  &::before{
+  &::before {
     content: "—";
     position: absolute;
     width: 16px;
@@ -110,7 +110,7 @@
   z-index: 1000000;
 }
 
-.contacts__content-media{
+.contacts__content-media {
   display: none;
 }
 
@@ -225,7 +225,7 @@
   }
 }
 
-.contacts__info-media{
+.contacts__info-media {
   display: none;
 }
 
@@ -251,17 +251,6 @@
 }
 
 .swiper__img {
-  flex-grow: 1;
-  margin: 0 20px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
   img {
     width: 100%;
   }
@@ -270,25 +259,6 @@
 .office__control {
   @extend %flexCenter;
   justify-content: start;
-}
-
-.control__progress {
-  flex-grow: 1;
-  height: 8px;
-  background: $gray200;
-  position: relative;
-  margin-right: 64px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 25%;
-    left: 0;
-    top: 0;
-    background-color: $primary500;
-    z-index: 10000;
-  }
 }
 
 .control__btns {
@@ -337,37 +307,23 @@
 }
 
 .team__swiper {
-  @extend %flexCenter;
-  justify-content: start;
 }
 
 .team__person {
-  flex-grow: 1;
-  margin: 0 20px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .person__image {
   @extend %flexCenter;
-  align-items: end;
   padding: 40px 40px 0;
-  //width: 100%;
   background-color: $gray100;
 
-  img{
-    //width: 100%;
-    //object-fit: contain;
+  img {
+    object-position: bottom;
   }
 }
 
 .person__info {
+  width: 100%;
   padding: 24px $normalPadding;
   border: 1px solid $gray300;
   border-top: none;
@@ -386,8 +342,10 @@
   @extend %fontSmallText;
 }
 
-.team__progress{
+.team__progress {
   display: none;
+  flex-grow: 1;
+  height: 8px;
 }
 
 // REQUISITES
@@ -447,7 +405,7 @@
   @extend %fontClassicText;
 }
 
-.requisites__media-download{
+.requisites__media-download {
   display: none;
 }
 
@@ -465,12 +423,12 @@
 .table__tr {
   transition: all 0.2s ease-in-out;
 
-  &:hover, &:active{
+  &:hover, &:active {
     background-color: $gray100;
   }
 }
 
-.table__copy{
+.table__copy {
   @extend %flexJustify;
 }
 
@@ -500,4 +458,21 @@
 }
 
 .swiper-slide img {
+}
+
+.control__progress {
+  flex-grow: 1;
+  margin-right: 64px;
+  height: 8px;
+}
+
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  height: 100% !important;
+  position: relative;
+  background: $gray200;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: $primary500;
+  z-index: 10000;
 }

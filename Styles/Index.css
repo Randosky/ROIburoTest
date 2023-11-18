@@ -53,7 +53,7 @@
   line-height: 20px;
 }
 
-.requisites__head-right, .person__image, .team__swiper, .control__btns, .office__control, .office__swiper, .contacts__info, .buttons__call, .buttons__map, .contacts__content-phones-lists, .history {
+.requisites__head-right, .person__image, .control__btns, .office__control, .office__swiper, .contacts__info, .buttons__call, .buttons__map, .contacts__content-phones-lists, .history {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,40 +287,12 @@
   margin-bottom: 32px;
 }
 
-.swiper__img {
-  flex-grow: 1;
-  margin: 0 20px;
-}
-.swiper__img:last-child {
-  margin-right: 0;
-}
-.swiper__img:first-child {
-  margin-left: 0;
-}
 .swiper__img img {
   width: 100%;
 }
 
 .office__control {
   justify-content: start;
-}
-
-.control__progress {
-  flex-grow: 1;
-  height: 8px;
-  background: #F2F2F2;
-  position: relative;
-  margin-right: 64px;
-}
-.control__progress::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 25%;
-  left: 0;
-  top: 0;
-  background-color: #00A55A;
-  z-index: 10000;
 }
 
 .control__btns {
@@ -361,27 +333,16 @@
   margin-bottom: 41px;
 }
 
-.team__swiper {
-  justify-content: start;
-}
-
-.team__person {
-  flex-grow: 1;
-  margin: 0 20px;
-}
-.team__person:first-child {
-  margin-left: 0;
-}
-.team__person:last-child {
-  margin-right: 0;
-}
-
 .person__image {
-  align-items: end;
   padding: 40px 40px 0;
   background-color: #FAFAFA;
 }
+.person__image img {
+  object-position: bottom;
+}
+
 .person__info {
+  width: 100%;
   padding: 24px 32px;
   border: 1px solid #D9D9D9;
   border-top: none;
@@ -393,6 +354,8 @@
 
 .team__progress {
   display: none;
+  flex-grow: 1;
+  height: 8px;
 }
 
 .requisites__head {
@@ -463,6 +426,23 @@
 
 .swiper-slide {
   user-select: none;
+}
+
+.control__progress {
+  flex-grow: 1;
+  margin-right: 64px;
+  height: 8px;
+}
+
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  height: 100% !important;
+  position: relative;
+  background: #F2F2F2;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #00A55A;
+  z-index: 10000;
 }
 
 /*# sourceMappingURL=Index.css.map */
